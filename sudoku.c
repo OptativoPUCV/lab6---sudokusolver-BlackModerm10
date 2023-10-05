@@ -44,7 +44,15 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-
+    int filas[9][10] = {0};
+    int columnas[9][10] = {0};
+    int subMatriz[9][10] = {0};
+    for(int i = 0; i < 9; i++) {
+      for(int j = 0; j < 9; j++) {
+        int num = n->sudo[i][j];
+      }
+    }
+  
     return 1;
 }
 

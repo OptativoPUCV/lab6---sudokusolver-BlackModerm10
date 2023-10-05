@@ -48,3 +48,23 @@ Thu 05 Oct 2023 04:07:17 AM UTC:
  tests:  0|5
 total_score: 0/70
 c8b1222
+Thu 05 Oct 2023 04:10:09 AM UTC: 
+ sudoku.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:52:13: error: unused variable ‘num’ [-Werror=unused-variable]
+   52 |         int num = n->sudo[i][j];
+      |             ^~~
+sudoku.c:49:9: error: unused variable ‘subMatriz’ [-Werror=unused-variable]
+   49 |     int subMatriz[9][10] = {0};
+      |         ^~~~~~~~~
+sudoku.c:48:9: error: unused variable ‘columnas’ [-Werror=unused-variable]
+   48 |     int columnas[9][10] = {0};
+      |         ^~~~~~~~
+sudoku.c:47:9: error: unused variable ‘filas’ [-Werror=unused-variable]
+   47 |     int filas[9][10] = {0};
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6f81f9c
