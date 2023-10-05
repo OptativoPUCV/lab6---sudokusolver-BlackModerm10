@@ -26,3 +26,19 @@ Thu 05 Oct 2023 04:05:58 AM UTC:
  tests:  0|5
 total_score: 0/70
 730b587
+Thu 05 Oct 2023 04:07:04 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:63:37: error: stray ‘#’ in program
+   63 |             if(is_valid(newNode)) { #debo hacer la funcion todavia
+      |                                     ^
+sudoku.c:63:38: error: unknown type name ‘debo’
+   63 |             if(is_valid(newNode)) { #debo hacer la funcion todavia
+      |                                      ^~~~
+sudoku.c:63:49: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘la’
+   63 |             if(is_valid(newNode)) { #debo hacer la funcion todavia
+      |                                                 ^~
+Compilation failed
+0cfbaf0
