@@ -74,3 +74,14 @@ Thu 05 Oct 2023 04:14:01 AM UTC:
  tests:  0|5
 total_score: 0/70
 6ff3cb1
+Thu 05 Oct 2023 04:15:13 AM UTC: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:59:33: error: statement with no effect [-Werror=unused-value]
+   59 |           subMatriz[i/3*3 + j/3][num];
+      |           ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+acc6b22
