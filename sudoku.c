@@ -50,6 +50,11 @@ int is_valid(Node* n){
     for(int i = 0; i < 9; i++) {
       for(int j = 0; j < 9; j++) {
         int num = n->sudo[i][j];
+        if(num != 0) {
+          if(filas[i][num] || columnas[j][num] || subMatriz[i/3*3 + j/3][num]) {
+            return 0;
+          }
+        }
       }
     }
   
