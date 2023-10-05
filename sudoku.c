@@ -64,6 +64,7 @@ List* get_adj_nodes(Node* n){
               pushBack(list, newNode);
             }
           }
+          free(newNode);
         }
       }
     }
