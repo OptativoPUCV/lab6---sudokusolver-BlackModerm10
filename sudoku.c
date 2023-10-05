@@ -55,7 +55,7 @@ int is_valid(Node* n){
             return 0;
           }
           filas[i][num] = 1;
-          columnas[i][num] = 1;
+          columnas[j][num] = 1;
           subMatriz[i/3*3 + j/3][num] = 1;
         }
       }
