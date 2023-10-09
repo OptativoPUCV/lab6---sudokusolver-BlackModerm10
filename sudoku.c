@@ -106,7 +106,7 @@ Node* DFS(Node* initial, int* cont){
   push(stack, initial);
   
   while(!is_empty(stack)) {
-    Node* current = (Node*)pop(stack);
+    Node* current = pop(stack);
     (*cont)++;
 
     if (is_final(current)) {

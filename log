@@ -149,3 +149,13 @@ sudoku.c:109:21: error: invalid use of void expression
       |                     ^
 Compilation failed
 7457e72
+Mon 09 Oct 2023 01:05:51 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:109:21: error: void value not ignored as it ought to be
+  109 |     Node* current = pop(stack);
+      |                     ^~~
+Compilation failed
+e83820e
