@@ -128,9 +128,10 @@ Node* DFS(Node* initial, int* cont){
             current->sudo[i][j] = 0;
           }
           if (options < min_options) {
-            min_row = i;
-            min_col = j;
-            min_options = options;
+              min_row = i;
+              min_col = j;
+              min_options = options;
+            }
           }
         }
       }

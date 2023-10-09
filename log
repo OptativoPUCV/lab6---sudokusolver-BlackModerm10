@@ -210,3 +210,17 @@ test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 7cc5def
+Mon 09 Oct 2023 01:27:14 AM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:118:9: error: variable ‘min_col’ set but not used [-Werror=unused-but-set-variable]
+  118 |     int min_col = -1;
+      |         ^~~~~~~
+sudoku.c:117:9: error: variable ‘min_row’ set but not used [-Werror=unused-but-set-variable]
+  117 |     int min_row = -1;
+      |         ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4d5a909
