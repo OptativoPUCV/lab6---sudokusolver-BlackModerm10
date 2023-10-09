@@ -104,6 +104,7 @@ int is_final(Node* n){
 Node* DFS(Node* initial, int* cont){
   Stack* stack = createStack();
   push(stack, initial);
+  
   while (!is_empty(stack)) {
     Node* current = top(stack);
     pop(stack);
@@ -113,10 +114,28 @@ Node* DFS(Node* initial, int* cont){
       return current;
     }
     
-  }
-  
-
-  
+    int min_row = -1;
+    int min_col = -1;
+    int min_options = 10;
+    for (int i = 0; i < 9; i++) {
+      for (int j = 0; j < 9; j++) {
+        if (current->sudo[i][j] == 0) {
+          int options = 0;
+          for (int num = 1; num <= 9; num++) {
+            if (is_valid(current)) {
+              options++;
+            }
+            current->sudo[i][j] = 0;
+          }
+          if (options < min_options) {
+            min_row = i;
+            min_col = j;
+            min_options = options;
+          }
+        }
+      }
+    }
+      
   return NULL;
 }
 
