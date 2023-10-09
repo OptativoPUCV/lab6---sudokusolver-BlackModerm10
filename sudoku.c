@@ -82,7 +82,7 @@ List* get_adj_nodes(Node* n){
               free(newNode);
             }
           }
-          return list;
+          return list; //No puedo creer que este return para detener la busqueda apenas encuentre la casilla era la solucion :c
         }
       }
     }
