@@ -135,8 +135,15 @@ Node* DFS(Node* initial, int* cont){
           }
         }
       }
+    for (int num = 1; num <= 9; num++) {
+      current->sudo[min_row][min_col] = num;
+      if (is_valid(current)) {
+        Node* adj_node = copy(current);
+        push(stack, adj_node);
+      }
     }
-      
+  }
+    
   return NULL;
 }
 
