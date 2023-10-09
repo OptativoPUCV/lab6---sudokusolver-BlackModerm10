@@ -139,3 +139,13 @@ Mon 09 Oct 2023 12:57:12 AM UTC:
  tests:  6|2
 total_score: 45/70
 d2a577a
+Mon 09 Oct 2023 01:05:41 AM UTC: 
+ sudoku.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:109:21: error: invalid use of void expression
+  109 |     Node* current = (Node*)pop(stack);
+      |                     ^
+Compilation failed
+7457e72
